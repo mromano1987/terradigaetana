@@ -218,7 +218,7 @@
     "tdg_promise": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-promise\">\n  <p class=\"tdg-eyebrow\">Unser Versprechen</p>\n  <h2>Qualität, die sich prüfen lässt</h2>\n  <p>Natives Olivenöl extra aus zertifizierter, kontrollierter Herkunft. Keine leeren Werbeversprechen – sondern Zertifikate und Analysen, die jederzeit einsehbar sind.</p>\n  <ul class=\"tdg-certs\"><li>IGP Sicilia</li><li>Biologisch</li><li>BRCS</li><li>IFS</li><li>Kosher</li></ul>\n</div>",
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-promise\">\n  <p class=\"tdg-eyebrow\">Unser Versprechen</p>\n  <h2>Qualität, die sich prüfen lässt</h2>\n  <p>Natives Olivenöl extra aus zertifizierter, kontrollierter Herkunft. Keine leeren Werbeversprechen – sondern Zertifikate und Analysen, die jederzeit einsehbar sind.</p>\n</div>",
         "section_width": "page-width",
         "padding-block-start": 80,
         "padding-block-end": 88
