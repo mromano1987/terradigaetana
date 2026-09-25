@@ -20,5 +20,7 @@ Die Dateien liegen auch im Shopify-Admin unter *Inhalte → Dateien* (`terradiga
 
 ## Theme
 
-`theme/` spiegelt die angepassten Dateien des unveröffentlichten Themes „Terra di Gaetana – Entwurf“.
+`theme/` spiegelt die angepassten Dateien des Themes.
+- Live: „Terra di Gaetana – Entwurf“ (`210549801351`) – per API nicht mehr beschreibbar.
+- Bearbeitung: „Terra di Gaetana – Arbeitskopie“ (`210557239687`), danach im Admin veröffentlichen.
 Änderungen werden per Admin-API (`themeFilesUpsert`) eingespielt; der Theme-Editor kann diese Dateien überschreiben.
