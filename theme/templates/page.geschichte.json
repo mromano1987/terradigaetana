@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "tdg_page_head": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-page-head\">\n  <img class=\"tdg-page-head__img\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-portrait.png?width=340\" alt=\"Porträtzeichnung von Tante Gaetana\" width=\"170\" height=\"170\">\n  <p class=\"tdg-eyebrow\">Sicilia · Olio Extravergine</p>\n  <h1>{{ page.title }}</h1>\n</div>",
+        "section_width": "page-width",
+        "padding-block-start": 64,
+        "padding-block-end": 8
+      }
+    },
+    "tdg_page_body": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-article\">\n  {{ page.content }}\n  <div class=\"tdg-btns\"><a class=\"tdg-btn tdg-btn--solid\" href=\"/collections/all\">Zum Olivenöl</a></div>\n</div>",
+        "section_width": "page-width",
+        "padding-block-start": 24,
+        "padding-block-end": 96
+      }
+    }
+  },
+  "order": [
+    "tdg_page_head",
+    "tdg_page_body"
+  ]
+}

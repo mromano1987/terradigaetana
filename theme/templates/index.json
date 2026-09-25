@@ -3,8 +3,7 @@
     "tdg_hero": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n.tdg{--tdg-olive:#5F7039;--tdg-olive-l:#7A8C4C;--tdg-sage:#C5C9AA;text-align:center}\n.tdg-eyebrow{font-family:var(--font-subheading--family);font-size:.75rem;letter-spacing:.32em;text-transform:uppercase;color:var(--tdg-olive);margin:0 0 1rem}\n.tdg h1,.tdg h2{font-family:var(--font-heading--family);font-weight:500;line-height:1.1;margin:0 0 1.25rem;text-wrap:balance}\n.tdg p{max-width:36rem;margin:0 auto 1rem;line-height:1.75;text-wrap:pretty}\n.tdg-orn{display:block;width:180px;max-width:50%;height:auto;margin:1.75rem auto}\n.tdg-btns{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}\n.tdg-btn{display:inline-block;padding:.95rem 2rem;font-family:var(--font-subheading--family);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--tdg-olive);border-radius:2px;transition:background .2s,color .2s}\n.tdg-btn--solid{background:var(--tdg-olive);color:#F7F2E9}\n.tdg-btn--solid:hover{background:#4C5A2D;border-color:#4C5A2D}\n.tdg-btn--ghost{color:var(--tdg-olive)}\n.tdg-btn--ghost:hover{background:var(--tdg-olive);color:#F7F2E9}\n</style>\n<div class=\"tdg tdg-hero\">\n  <img class=\"tdg-hero__logo\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-logo-full.png?width=900\" alt=\"Terra di Gaetana – Sicilia · Olio Extravergine\" width=\"900\" height=\"554\">\n  <img class=\"tdg-orn\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-ornament.png?width=400\" alt=\"\" width=\"400\" height=\"65\">\n  <h1>Olivenöl aus Gaetanas Sizilien</h1>\n  <p>Natives Olivenöl extra – von sizilianischer Erde direkt auf deinen Tisch.</p>\n  <div class=\"tdg-btns\">\n    <a class=\"tdg-btn tdg-btn--solid\" href=\"/collections/all\">Zum Shop</a>\n    <a class=\"tdg-btn tdg-btn--ghost\" href=\"#gaetana\">Gaetanas Geschichte</a>\n  </div>\n</div>\n<style>\n.tdg-hero__logo{display:block;width:min(460px,86%);height:auto;margin:0 auto}\n.tdg-hero h1{font-size:clamp(2rem,5vw,3.25rem)}\n</style>",
-        "background_color": "",
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-hero\">\n  <img class=\"tdg-hero__logo\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-logo-full.png?width=900\" alt=\"Terra di Gaetana – Sicilia · Olio Extravergine\" width=\"900\" height=\"554\">\n  <img class=\"tdg-orn\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-ornament.png?width=400\" alt=\"\" width=\"400\" height=\"65\">\n  <h1>Natives Olivenöl extra aus Mirabella Imbaccari</h1>\n  <p>Mit einer Geschichte, die bei meiner Familie beginnt – und nicht im Marketingbüro erfunden wurde.</p>\n  <div class=\"tdg-btns\">\n    <a class=\"tdg-btn tdg-btn--solid\" href=\"/collections/all\">Zum Shop</a>\n    <a class=\"tdg-btn tdg-btn--ghost\" href=\"/pages/unsere-geschichte\">Unsere Geschichte</a>\n  </div>\n</div>",
         "section_width": "page-width",
         "padding-block-start": 72,
         "padding-block-end": 88
@@ -13,11 +12,11 @@
     "tdg_values": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "\n<div class=\"tdg tdg-values\">\n  <div class=\"tdg-value\">\n    <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 42V20\" /><path d=\"M24 26c-7-1-11-6-11-13 7 1 11 6 11 13z\"/><path d=\"M24 22c6-1 10-5 10-11-6 1-10 5-10 11z\"/></svg>\n    <h3>Extra Vergine</h3>\n    <p>Natives Olivenöl extra – die höchste Güteklasse für Olivenöl.</p>\n  </div>\n  <div class=\"tdg-value\">\n    <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"20\" r=\"7\"/><path d=\"M24 42s-14-11-14-22a14 14 0 0 1 28 0c0 11-14 22-14 22z\"/></svg>\n    <h3>Aus Sizilien</h3>\n    <p>Oliven aus sizilianischer Erde, wo Sonne, Wind und Meer den Geschmack prägen.</p>\n  </div>\n  <div class=\"tdg-value\">\n    <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 40s-15-9-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11-15 20-15 20z\"/></svg>\n    <h3>Mit Herz abgefüllt</h3>\n    <p>Hinter jeder Flasche steht Gaetana – und ihr Anspruch an echte Qualität.</p>\n  </div>\n</div>\n<style>\n.tdg-values{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;padding-block:1rem}\n.tdg-value svg{width:44px;height:44px;fill:none;stroke:var(--tdg-olive-l);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-bottom:.75rem}\n.tdg-value h3{font-family:var(--font-heading--family);font-weight:500;font-size:1.6rem;margin:0 0 .5rem}\n.tdg-value p{font-size:.95rem;margin:0 auto;max-width:18rem;color:#4A443C}\n@media (max-width:749px){.tdg-values{grid-template-columns:1fr;gap:2rem}}\n</style>",
-        "background_color": "#EFE8DA",
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-values\">\n  <div class=\"tdg-value\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"20\" r=\"7\"/><path d=\"M24 42s-14-11-14-22a14 14 0 0 1 28 0c0 11-14 22-14 22z\"/></svg><h3>Mirabella Imbaccari</h3><p>Herkunftsort im Herzen Siziliens, Provinz Catania.</p></div>\n  <div class=\"tdg-value\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 42V20\"/><path d=\"M24 26c-7-1-11-6-11-13 7 1 11 6 11 13z\"/><path d=\"M24 22c6-1 10-5 10-11-6 1-10 5-10 11z\"/></svg><h3>Familiäre Verbindung</h3><p>Direkter Bezug über Anbau und Ernte meiner Familie.</p></div>\n  <div class=\"tdg-value\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M6 24s7-12 18-12 18 12 18 12-7 12-18 12S6 24 6 24z\"/><circle cx=\"24\" cy=\"24\" r=\"5\"/></svg><h3>Volle Transparenz</h3><p>Vom Olivenbaum über die Mühle bis zur Flasche nachvollziehbar.</p></div>\n</div>",
         "section_width": "page-width",
         "padding-block-start": 64,
-        "padding-block-end": 64
+        "padding-block-end": 64,
+        "background_color": "#EFE8DA"
       }
     },
     "product_list_fa6P9H": {
@@ -209,11 +208,20 @@
     "tdg_story": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "\n<div class=\"tdg tdg-story\" id=\"gaetana\">\n  <img class=\"tdg-story__img\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-portrait.png?width=560\" alt=\"Porträtzeichnung von Gaetana\" width=\"280\" height=\"280\" loading=\"lazy\">\n  <div class=\"tdg-story__text\">\n    <p class=\"tdg-eyebrow\">La nostra storia</p>\n    <h2>Wer ist Gaetana?</h2>\n    <p>Hier erzählst du Gaetanas Geschichte: woher sie kommt, wo die Oliven wachsen und warum dieses Öl etwas Besonderes ist. Diesen Text ersetzen wir, sobald du mir ein paar Zeilen dazu schickst.</p>\n    <div class=\"tdg-btns tdg-btns--left\"><a class=\"tdg-btn tdg-btn--ghost\" href=\"/pages/ueber-uns\">Mehr erfahren</a></div>\n  </div>\n</div>\n<style>\n.tdg-story{display:grid;grid-template-columns:280px 1fr;gap:4rem;align-items:center;text-align:left;max-width:60rem;margin:0 auto}\n.tdg-story__img{width:100%;height:auto;display:block}\n.tdg-story p{margin-inline:0}\n.tdg-btns--left{justify-content:flex-start}\n@media (max-width:749px){.tdg-story{grid-template-columns:1fr;gap:2rem;text-align:center}.tdg-story__img{max-width:200px;margin:0 auto}.tdg-story p{margin-inline:auto}.tdg-btns--left{justify-content:center}}\n</style>",
-        "background_color": "#EFE8DA",
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-story\" id=\"geschichte\">\n  <img class=\"tdg-story__img\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-portrait.png?width=520\" alt=\"Porträtzeichnung von Tante Gaetana\" width=\"260\" height=\"260\" loading=\"lazy\">\n  <div>\n    <p class=\"tdg-eyebrow\">Die Geschichte</p>\n    <h2>Zwei Länder, eine Wurzel</h2>\n    <p>In Mirabella Imbaccari, mitten im Herzen Siziliens, bewirtschaften meine Tante Gaetana und mein Onkel seit Jahren eigene Olivenbäume. Jede Ernte bringen sie ihre Oliven zum Frantoio Berretta – und von dort bringe ich das Öl direkt nach Deutschland.</p>\n    <p class=\"tdg-quote\">„Ein Öl, das ich mit gutem Gewissen empfehlen kann – weil ich seinen Weg von der Plantage bis zur Flasche kenne.“</p>\n    <p>– Marco Romano</p>\n    <div class=\"tdg-btns\"><a class=\"tdg-btn tdg-btn--ghost\" href=\"/pages/unsere-geschichte\">Ganze Geschichte lesen</a></div>\n  </div>\n</div>",
         "section_width": "page-width",
         "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-end": 80,
+        "background_color": "#EFE8DA"
+      }
+    },
+    "tdg_promise": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-promise\">\n  <p class=\"tdg-eyebrow\">Unser Versprechen</p>\n  <h2>Qualität, die sich prüfen lässt</h2>\n  <p>Natives Olivenöl extra aus zertifizierter, kontrollierter Herkunft. Keine leeren Werbeversprechen – sondern Zertifikate und Analysen, die jederzeit einsehbar sind.</p>\n  <ul class=\"tdg-certs\"><li>IGP Sicilia</li><li>Biologisch</li><li>BRCS</li><li>IFS</li><li>Kosher</li></ul>\n</div>",
+        "section_width": "page-width",
+        "padding-block-start": 80,
+        "padding-block-end": 88
       }
     }
   },
@@ -221,6 +229,7 @@
     "tdg_hero",
     "tdg_values",
     "product_list_fa6P9H",
-    "tdg_story"
+    "tdg_story",
+    "tdg_promise"
   ]
 }
