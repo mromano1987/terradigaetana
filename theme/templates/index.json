@@ -3,7 +3,7 @@
     "tdg_hero": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-hero\">\n  <img class=\"tdg-hero__logo\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-logo-full.png?width=900\" alt=\"Terra di Gaetana – Sicilia · Olio Extravergine\" width=\"900\" height=\"554\">\n  <img class=\"tdg-orn\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-ornament.png?width=400\" alt=\"\" width=\"400\" height=\"65\">\n  <h1>Natives Olivenöl extra aus Mirabella Imbaccari</h1>\n  <p>Mit einer Geschichte, die bei meiner Familie beginnt – und nicht im Marketingbüro erfunden wurde.</p>\n  <div class=\"tdg-btns\">\n    <a class=\"tdg-btn tdg-btn--solid\" href=\"/collections/all\">Zum Shop</a>\n    <a class=\"tdg-btn tdg-btn--ghost\" href=\"/pages/unsere-geschichte\">Unsere Geschichte</a>\n  </div>\n</div>",
+        "custom_liquid": "{{ 'terradigaetana.css' | asset_url | stylesheet_tag }}\n<div class=\"tdg tdg-hero\">\n  <img class=\"tdg-hero__logo\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-logo-full.png?width=900\" alt=\"Terra di Gaetana – Sicilia · Olio Extravergine\" width=\"900\" height=\"554\">\n  <img class=\"tdg-orn\" src=\"https://cdn.shopify.com/s/files/1/1099/6950/6695/files/terradigaetana-ornament.png?width=400\" alt=\"\" width=\"400\" height=\"65\">\n  <h1>Natives Olivenöl extra aus Mirabella Imbaccari</h1>\n  <p>Mit einer Geschichte, die bei meiner Familie beginnt – und nicht im Marketingbüro erfunden wurde.</p>\n  <div class=\"tdg-btns\">\n    <a class=\"tdg-btn tdg-btn--solid\" href=\"/collections/olivenol\">Zum Shop</a>\n    <a class=\"tdg-btn tdg-btn--ghost\" href=\"/pages/unsere-geschichte\">Unsere Geschichte</a>\n  </div>\n</div>",
         "section_width": "page-width",
         "padding-block-start": 72,
         "padding-block-end": 88
@@ -186,7 +186,7 @@
       },
       "name": "t:names.product_list",
       "settings": {
-        "collection": "all",
+        "collection": "olivenol",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
